@@ -1,20 +1,16 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# SnowMatch
 
-# Run and deploy your AI Studio app
+A ski-instructor matching prototype built with React and TypeScript.
 
-This contains everything you need to run your app locally.
+The interface combines onboarding, instructor cards, search preferences and matching. Instructor and resort examples come from `services/mockData.ts`; they are not a verified marketplace or certification registry.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1LVIm9X6ZJB1dhawktkrndCfsKUMec3NY
+`services/geminiService.ts` contains an optional instructor-bio generation path. Live provider behavior was not verified in this review.
 
-## Run Locally
+## Run locally
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Build with `npm run build`. These commands follow `package.json`; no new runtime validation was performed for this README update.
